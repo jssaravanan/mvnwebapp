@@ -1,6 +1,6 @@
 <html>
 <body>
 <h2>Hello World!</h2>
-  <h3>Deployed from <b>Jenkins</b> in Tomcat server (GIT-Hub code)</h3>
+  <p>Deployed from <b><u>Jenkins</u></b> in Tomcat server (GIT-Hub code)</p>
 </body>
 </html>
