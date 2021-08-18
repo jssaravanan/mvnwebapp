@@ -1,8 +1,5 @@
 pipeline{
-    //agent any
-    agent{
-           label 'windows_node'
-    }
+    agent any
     stages{
          stage('checkout'){
             steps{
@@ -18,7 +15,7 @@ pipeline{
         }
          stage ('deploy'){
             steps{
-                    deploy adapters: [tomcat8(credentialsId: 'e9b5f201-08b4-499f-a76b-7e5aa73307d5', path: '', url: 'http://localhost:8081')], contextPath: 'mvnwebapp', war: '**/*.war'
+                    //deploy adapters: [tomcat8(credentialsId: 'e9b5f201-08b4-499f-a76b-7e5aa73307d5', path: '', url: 'http://localhost:8081')], contextPath: 'mvnwebapp', war: '**/*.war'
                     echo "deployment completed"
                 }
         }
